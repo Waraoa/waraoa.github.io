@@ -122,6 +122,13 @@ input, select, textarea {
 			border-color: transparent;
 		}
 
+#buttonLink {
+	background-color: none;
+	  color: white;
+	  padding: 5pt;
+  	border: 1px solid grey; 
+}
+
 /* Icon */
 
 	.icon {
@@ -697,6 +704,108 @@ input, select, textarea {
 					display: none;
 				}
 
+				
+				#header a {
+					background-color: none;
+					color: white;
+					padding: 5pt;
+					border: none;
+					font-size: 20pt;
+
+					transition: all 0.2s ease-in-out;
+				}
+/*
+				#header a:hover {
+					background-color: none;
+					color: rgb(199, 199, 199);
+					padding: 4pt;
+					border: 1px solid rgb(189, 189, 189); 
+					-webkit-transform: scale(1.4);
+					-moz-transform: scale(1.4);
+					-ms-transform: scale(1.4);
+					-o-transform: scale(1.4);
+					transform: scale(1.4);
+				}*/
+
+
+				
+
+				.sim-button{
+					line-height: 50px;
+					height: 50px;
+					text-align: center;
+					margin-right: auto;
+					margin-left: auto;
+					margin-top: 125px;
+					width: 60%;
+					cursor: pointer;
+					
+				}
+
+
+				.button13 {
+	color: rgba(255,255,255,1);
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+	position: relative;
+}
+.button13 a{
+	color: rgba(51,51,51,1);
+	text-decoration: none;
+	display: block;
+}
+.button13::before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	border: 1px solid rgba(255,255,255,0.5);
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.button13:hover::before{
+	opacity: 0;
+	-webkit-transform: scale(1.2,1.2);
+	transform: scale(1.2,1.2);
+}
+.button13::after{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	opacity: 0;
+	background-color: rgba(255,255,255,0.25);
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+	-webkit-transform: scale(0.5,0.5);
+	transform: scale(0.5,0.5);
+}
+.button13:hover::after{
+	opacity: 1 ;
+	-webkit-transform: scale(1,1);
+	transform: scale(1,1);
+}
+
+
+				
+
+
+				#header div {
+					height: 20pt;
+				}
+
 /* Footer */
 
 	#footer {
@@ -710,8 +819,15 @@ input, select, textarea {
 		left: 0;
 		line-height: 8em;
 		position: absolute;
-		text-align: center;
+		text-align: right;
 		width: 100%;
+		font-size: 8pt;
+
+	}
+
+	#footer span {
+		padding-right: 4pt;
+		padding-bottom: 0pt;
 	}
 
 /* Wide */
