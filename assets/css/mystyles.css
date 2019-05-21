@@ -13,6 +13,24 @@
 }
 
 
+.anwendung {
+    width: 96%;
+    height: width/16 * 9;
+    /*background-color: grey; */
+
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+    padding: 5pt 0pt 20pt 0pt;
+    
+}
+
+.anwendung div img{
+    width: 100%;
+    border: 10pt solid grey;;
+}
+
 
 
 
