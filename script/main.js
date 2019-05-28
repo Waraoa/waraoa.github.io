@@ -35,3 +35,15 @@ function init() {
 
    imageMapResize();
 }
+
+function init2() {
+   imageMapResize();
+
+   $('#login').hide();
+   $('#harzt').hide();
+   $('#tharzt').hide();
+   $('#atharzt').hide();
+   $('#endeA1').hide();
+
+   imageMapResize();
+}

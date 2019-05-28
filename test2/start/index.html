@@ -40,6 +40,7 @@
 								<img src="img/1/2_start.png" usemap="#map_start" class="borderedImg">
 									<map name="map_start">
 										<area shape="rect" coords="0,302,336,364" href="#" onclick="login('harzt')" title="Go to page 'Login'" />
+										<area shape="rect" coords="0,364,336,424" href="#" onclick="alert('zum Zahnarzt')" title="Go to page 'Login'" />
 									</map>
 								</img>
 							</div>
@@ -50,6 +51,7 @@
 										<area shape="rect" coords="1034,474,1222,646" href="#" onclick="login('tharzt')" title="Go to page 'Login'" />
 										<area shape="rect" coords="0,302,336,364" href="#" onclick="login('harzt')" title="Go to page 'Login'" />
 										<area shape="rect" coords="0,142,336,204" href="#" onclick="login('start')" title="Go to page 'Login'" />
+										<area shape="rect" coords="0,364,336,426" href="#" onclick="alert('zum Zahnarzt')" title="Go to page 'Login'" />
 									</map>
 								</img>
 							</div>
@@ -57,10 +59,11 @@
 							<div id="tharzt" >
 								<img src="img/1/4_TermineHausarzt.png" usemap="#map_tharzt" class="borderedImg">
 									<map name="map_tharzt">
-										<area shape="rect" coords="724,600,974,638" href="#" onclick="login('atharzt'); finish1()" title="Go to page 'Login'" />
+										<area shape="rect" coords="724,600,974,638" href="#" onclick="login('atharzt');" title="Go to page 'Login'" />
 										<area shape="rect" coords="0,302,336,364" href="#" onclick="login('harzt')" title="Go to page 'Login'" />
 										<area shape="rect" coords="1034,474,1222,646" href="#" onclick="login('harzt')" title="Go to page 'Login'" />
 										<area shape="rect" coords="0,142,336,204" href="#" onclick="login('start')" title="Go to page 'Login'" />
+										<area shape="rect" coords="0,364,336,424" href="#" onclick="alert('zum Zahnarzt')" title="Go to page 'Login'" />
 									</map>
 								</img>
 							</div>
@@ -68,7 +71,11 @@
 							<div id="atharzt" >
 								<img src="img/1/5_TerminAusgewählt.png" usemap="#map_atharzt" class="borderedImg">
 									<map name="map_atharzt">
-										<!--<area shape="rect" coords="1380,636,1630,866" href="#" onclick="login('fertig')" title="Go to page 'Login'" />-->
+										
+										<area shape="rect" coords="0,302,336,364" href="#" onclick="login('harzt')" title="Go to page 'Login'" />
+										<area shape="rect" coords="1034,474,1222,646" href="#" onclick="login('harzt')" title="Go to page 'Login'" />
+										<area shape="rect" coords="0,142,336,204" href="#" onclick="login('start')" title="Go to page 'Login'" />
+										<area shape="rect" coords="0,364,336,424" href="#" onclick="alert('zum Zahnarzt')" title="Go to page 'Login'" />
 									</map>
 								</img>
 							</div>
@@ -76,7 +83,7 @@
 							<div id="endeA1" >
 								<img src="img/1/6_fertig.png" usemap="#map_fertig" class="borderedImg">
 									<map name="map_fertig">
-										<area shape="rect" coords="884,526,1172,600" href="../../test2" title="Go to page 'Login'" />
+										<area shape="rect" coords="884,526,1172,600" href="#"  title="Go to page 'Login'" />
 									</map>
 								</img>
 							</div>
@@ -95,7 +102,7 @@
 			</div>
 		</div>
 		<script>
-			window.onload = function() { document.body.classList.remove('is-preload'); init(); }
+			window.onload = function() { document.body.classList.remove('is-preload'); init2(); }
 			window.ontouchmove = function() { return false; }
 			window.onorientationchange = function() { document.body.scrollTop = 0; }
 		</script>
