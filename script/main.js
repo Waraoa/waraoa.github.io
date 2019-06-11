@@ -40,10 +40,16 @@ function init2() {
    imageMapResize();
 
    $('#login').hide();
-   $('#harzt').hide();
+   $('#harzt2').hide();
    $('#tharzt').hide();
-   $('#atharzt').hide();
-   $('#endeA1').hide();
+   $('#endeA2').hide();
+   $('#meinTermin').hide();
+   $('#meinTerminClick').hide();
+   $('#meinTerminAbsagen').hide();
+   $('#meinTerminAbgesagt').hide();
+   $('#meinTerminWeg').hide();
+
+   last = 'start';
 
    imageMapResize();
 }

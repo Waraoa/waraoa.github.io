@@ -28,33 +28,75 @@
 					<header id="header">
 						<div class="areaContainer">
 							
-							<div id="login">
-								<img src="img/1/1_login.png" usemap="#map_login" class="borderedImg">
-									<map name="map_login">
-										<area shape="rect" coords="1020,732,1160,768" href="#" onclick="login('start')" title="Go to page 'Start'" />
-									</map>
-								</img>
-							</div>
+							
 				
 							<div id="start" >
-								<img src="img/1/2_start.png" usemap="#map_start" class="borderedImg">
+								<img src="img/2/6-Mein Kalender - nach Hausarzt.png" usemap="#map_start" class="borderedImg">
 									<map name="map_start">
-										<area shape="rect" coords="0,302,336,364" href="#" onclick="login('harzt')" title="Go to page 'Login'" />
-										<area shape="rect" coords="0,364,336,424" href="#" onclick="alert('zum Zahnarzt')" title="Go to page 'Login'" />
+										
+										<area shape="rect" coords="1034,474,1222,646" href="#" onclick="login('meinTermin')" title="Go to page 'Login'" />
 									</map>
 								</img>
 							</div>
-				
-							<div id="harzt" >
-								<img src="img/1/3_hausarzt.png" usemap="#map_harzt" class="borderedImg">
+
+							<div id="meinTermin" >
+								<img src="img/2/7-Mein Kalender - Termine anzeigen.png" usemap="#map_harzt" class="borderedImg">
 									<map name="map_harzt">
-										<area shape="rect" coords="1034,474,1222,646" href="#" onclick="login('tharzt')" title="Go to page 'Login'" />
-										<area shape="rect" coords="0,302,336,364" href="#" onclick="login('harzt')" title="Go to page 'Login'" />
+										
 										<area shape="rect" coords="0,142,336,204" href="#" onclick="login('start')" title="Go to page 'Login'" />
-										<area shape="rect" coords="0,364,336,426" href="#" onclick="alert('zum Zahnarzt')" title="Go to page 'Login'" />
+										
+										<area shape="rect" coords="724,458,974,496" href="#" onclick="login('meinTerminClick');" title="mein Termin" />
 									</map>
 								</img>
 							</div>
+
+							<div id="meinTerminClick" >
+								<img src="img/2/8-Mein Kalender - Zahnarzt ausgewaehlt.png" usemap="#map_tclick" class="borderedImg">
+									<map name="map_tclick">
+										
+										<area shape="rect" coords="0,142,336,204" href="#" onclick="login('start')" title="Go to page 'Login'" />
+										
+										<area shape="rect" coords="955,520,974,540" href="#" onclick="login('meinTerminAbsagen');" title="mein Termin" />
+									</map>
+								</img>
+							</div>
+
+							<div id="meinTerminAbsagen" >
+								<img src="img/2/9-Mein Kalender - Zahnarzt stornieren frage.png" usemap="#map_tabsagen" class="borderedImg">
+									<map name="map_tabsagen">
+										
+										<area shape="rect" coords="0,142,336,204" href="#" onclick="login('start')" title="Go to page 'Login'" />
+										
+										<area shape="rect" coords="800,680,936,710" href="#" onclick="login('meinTerminAbgesagt')" title="mein Termin" />
+										<area shape="rect" coords="1000,680,1130,710" href="#" onclick="login('meinTerminClick')" title="mein Termin" />
+									</map>
+								</img>
+							</div>
+
+							<div id="meinTerminAbgesagt" >
+								<img src="img/2/10-Mein Kalender - nach stornierung.png" usemap="#map_tabgesagt" class="borderedImg">
+									<map name="map_tabgesagt">
+										
+										
+										<area shape="rect" coords="724,400,974,700" href="#" onclick="" title="Go to page 'Login'" />
+
+										<area shape="rect" coords="0,0,1920,1080" href="#" onclick="login('meinTerminWeg')" title="Go to page 'Login'" />
+
+										
+									</map>
+								</img>
+							</div>
+
+							<div id="meinTerminWeg" >
+								<img src="img/2/11-Mein Kalender - Termin weg.png" usemap="#map_tabgesagt" class="borderedImg">
+									<map name="map_tabgesagt">
+										
+									</map>
+								</img>
+							</div>
+
+
+							
 				
 							<div id="tharzt" >
 								<img src="img/1/4_TermineHausarzt.png" usemap="#map_tharzt" class="borderedImg">
@@ -68,22 +110,11 @@
 								</img>
 							</div>
 				
-							<div id="atharzt" >
-								<img src="img/1/5_TerminAusgewaehlt.png" usemap="#map_atharzt" class="borderedImg">
-									<map name="map_atharzt">
-										
-										<area shape="rect" coords="0,302,336,364" href="#" onclick="login('harzt')" title="Go to page 'Login'" />
-										<area shape="rect" coords="1034,474,1222,646" href="#" onclick="login('harzt')" title="Go to page 'Login'" />
-										<area shape="rect" coords="0,142,336,204" href="#" onclick="login('start')" title="Go to page 'Login'" />
-										<area shape="rect" coords="0,364,336,424" href="#" onclick="alert('zum Zahnarzt')" title="Go to page 'Login'" />
-									</map>
-								</img>
-							</div>
-				
-							<div id="endeA1" >
-								<img src="img/1/6_fertig.png" usemap="#map_fertig" class="borderedImg">
-									<map name="map_fertig">
-										<area shape="rect" coords="884,526,1172,600" href="#"  title="Go to page 'Login'" />
+
+							<div id="endeA2">
+								<img src="img/1/1_login.png" usemap="#map_login" class="borderedImg">
+									<map name="map_login">
+										<area shape="rect" coords="1020,732,1160,768" href="#" onclick="login('start')" title="Go to page 'Start'" />
 									</map>
 								</img>
 							</div>
