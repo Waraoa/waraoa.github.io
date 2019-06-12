@@ -22,6 +22,14 @@ function finish1() {
 
 }
 
+function finish2() {
+
+   setTimeout(function(){
+      login('endeA2Fertig');
+   }, 2000);
+
+}
+
 
 
 function init() {
@@ -41,13 +49,14 @@ function init2() {
 
    $('#login').hide();
    $('#harzt2').hide();
-   $('#tharzt').hide();
    $('#endeA2').hide();
    $('#meinTermin').hide();
    $('#meinTerminClick').hide();
    $('#meinTerminAbsagen').hide();
    $('#meinTerminAbgesagt').hide();
    $('#meinTerminWeg').hide();
+   $('#endeA2Fertig').hide();
+
 
    last = 'start';
 
